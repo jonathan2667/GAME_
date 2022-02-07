@@ -16,17 +16,20 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 600, 1); 
+        super(1100, 600, 1); 
         prepare();
         
         ShipPlayer mainPlayer = new ShipPlayer();
         addObject(mainPlayer, getWidth() / 2, getHeight() / 2);
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
     {
+        Plus plus = new Plus();
+        addObject(plus,889,141);
     }
 }

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Equations
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Equations\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Equations()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=key\ downImage\ upImage
+comment3.target=void\ keyPressed(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=value
+comment4.target=void\ printOnSquares(java.lang.String)
+comment5.params=
+comment5.target=void\ showAnswer()
+comment6.params=sum
+comment6.target=int[]\ generateNumbers(int)
+comment7.params=
+comment7.target=void\ printOnBoard()
+comment8.params=
+comment8.target=void\ findIfTouched()
+numComments=9

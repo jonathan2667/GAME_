@@ -6,20 +6,19 @@ import java.lang.Object;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Score extends Writing
+public class Score extends Solve
 {
-    int score = 0;
     /**
      * Act - do whatever the Score wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Score() {
-        setImage(new GreenfootImage("SCORE: " + score, 40, Color.BLACK, new Color(0,0,0, 0 )));    
+        setImage(new GreenfootImage("SCORE: " + 0 , 40, Color.WHITE, new Color(0,0,0, 0 ), Color.BLACK));    
     }
     
     public void act()
     {
         // Add your action code here.
-        setImage(new GreenfootImage("SCORE: " + score, 40, Color.BLACK, new Color(0,0,0, 0 )));    
+        setImage(new GreenfootImage("SCORE: " + ((Equations)getWorld().getObjects(Equations.class).get(0)).score, 40, Color.WHITE, new Color(0,0,0, 0 ), Color.BLACK));    
     }
 }

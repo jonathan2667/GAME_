@@ -54,12 +54,15 @@ public class Movers extends Actor
         } 
     }
 
+    
+    
     public void motionAhead(int speed) {
         int x = getX();
         int y = getY();
 
         setLocation(x + speed, y);
     }
+    
     
     public void motionBackwards(int speed) {
         int x = getX();

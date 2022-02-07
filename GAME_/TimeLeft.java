@@ -13,14 +13,14 @@ public class TimeLeft extends Writing
      * Act - do whatever the TimeLeft wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int timeLeft = 30;
+    int timeLeft = 100;
     
     Date time1 = new Date();
     
     int initial = time1.getSeconds();
     
     public TimeLeft() {
-        setImage(new GreenfootImage("TIME LEFT: " + timeLeft, 40, Color.BLACK, new Color(0,0,0, 0 )));    
+        setImage(new GreenfootImage(": " + timeLeft, 40, Color.WHITE, new Color(0,0,0, 0 ), Color.BLACK));    
     }
 
     public void act()
@@ -36,10 +36,10 @@ public class TimeLeft extends Writing
             timeLeft--;
             initial = newTime1.getSeconds();
             
-            if (timeLeft == 0) {
+            if (timeLeft < 1) {
                 Greenfoot.stop();
             }
         }
-        setImage(new GreenfootImage("TIME LEFT: " + timeLeft, 40, Color.BLACK, new Color(0,0,0, 0 )));    
+        setImage(new GreenfootImage(": " + timeLeft, 40, Color.WHITE, new Color(0,0,0, 0 ), Color.BLACK));    
     }
 }

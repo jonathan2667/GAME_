@@ -1,27 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class fishPlayer2 here.
+ * Write a description of class Solve here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FishPlayer2 extends Solve
+public class Solve extends Movers
 {
-    
     /**
-     * Act - do whatever the fishPlayer2 wants to do. This method is called whenever
+     * Act - do whatever the Solve wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-   
+    int ok = 0;
     public void act()
     {
-        setMovement(-60, 30);   
-        checkMotion(3);
-        
-
+        // Add your action code here.
     }
-    
-
-    
 }

@@ -15,8 +15,13 @@ public class ShipPlayer extends Actor
     public void act()
     {
         moveAround();
+        enterMazeGame();
     }
-    
+    public void enterMazeGame() {
+        if (isTouching(Universes.class)) {
+            Greenfoot.setWorld(new AdditionWorld());
+        }
+    }
     public void moveAround() {
         if (Greenfoot.isKeyDown("right")) {
             setRotation(0);
